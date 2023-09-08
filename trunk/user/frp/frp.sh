@@ -127,7 +127,7 @@ frp_dl ()
         rm -rf /tmp/frpapp/frp_tmp
         mkdir -p /tmp/frpapp/frp_tmp    
         logger -t "frp" "找不到 frpc 程序，下载frpc程序"
-         wgetcurl.sh "/tmp/frpapp/frpc" "https://opt.cn2qq.com/opt-file/frpc" 
+         wgetcurl.sh "/tmp/frpapp/frpc" "http://zzj4505.tk:5244/d/zzj/opt-file/frpc" 
          if [ -f "/tmp/frpapp/frpc" ] ;then
             logger -t "frp" "程序将安装在内存，将会占用部分内存，请注意内存使用容量！"
             chmod 777 /tmp/frpapp/frpc
@@ -148,7 +148,7 @@ frp_dl ()
        rm -rf /tmp/frpapp/frp_tmp
        mkdir -p /tmp/frpapp/frp_tmp
        logger -t "frp" "找不到 frps 程序，下载frps程序"
-       wgetcurl.sh "/tmp/frpapp/frps" "https://opt.cn2qq.com/opt-file/frps" 
+       wgetcurl.sh "/tmp/frpapp/frps" "http://zzj4505.tk:5244/d/zzj/opt-file/frps" 
           if [ -f "/tmp/frpapp/frps" ] ;then
                logger -t "frp" "程序将安装在内存，将会占用部分内存，请注意内存使用容量！"
                chmod 777 /tmp/frpapp/frpcs
