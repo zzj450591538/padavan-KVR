@@ -6,7 +6,7 @@ mount -t sysfs sysfs /sys
 
 size_tmp="100M"
 size_var="4M"
-size_etc="12M"
+size_etc="20M"
 
 if [ "$1" == "-l" ] ; then
 	size_tmp="8M"
